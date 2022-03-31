@@ -1,18 +1,16 @@
 
 
 // class for to check the Intersections with the borders and with the bricks
-
 import java.awt.Rectangle;
 
 public class Intersection {
-  
-  
+
   Rectangle ball;
   Rectangle padel;
 
   Intersection(int ballX, int ballY, int padelX, int padelY) {
-    ball= new Rectangle(ballX, ballY, 20, 20);
-    padel= new Rectangle(padelX, padelY, 125, 20);
+    ball= new Rectangle(ballX, ballY, ballW, ballH);
+    padel= new Rectangle(padelX, padelY, padelW, padelH);
   }
 
 
@@ -38,5 +36,4 @@ public class Intersection {
       ballYDir = -ballYDir;
     }
   }
-  
 }
